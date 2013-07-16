@@ -6,7 +6,7 @@
 ;;;### (autoloads (evilnc-default-hotkeys evilnc-copy-and-comment-lines
 ;;;;;;  evilnc-comment-or-uncomment-lines evilnc-toggle-comment-empty-lines
 ;;;;;;  evilnc-comment-or-uncomment-to-the-line) "evil-nerd-commenter"
-;;;;;;  "evil-nerd-commenter.el" (20962 43022 0 0))
+;;;;;;  "evil-nerd-commenter.el" (20964 44622))
 ;;; Generated autoloads from evil-nerd-commenter.el
 
 (autoload 'evilnc-comment-or-uncomment-to-the-line "evil-nerd-commenter" "\
@@ -44,8 +44,8 @@ Set the hotkeys of evil-nerd-comment
 
 ;;;***
 
-;;;### (autoloads nil nil ("evil-nerd-commenter-pkg.el") (20962 43022
-;;;;;;  921603 0))
+;;;### (autoloads nil nil ("evil-nerd-commenter-pkg.el") (20964 44622
+;;;;;;  140399))
 
 ;;;***
 

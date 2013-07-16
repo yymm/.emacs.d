@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (evil-numbers/dec-at-pt evil-numbers/inc-at-pt)
-;;;;;;  "evil-numbers" "evil-numbers.el" (20962 43022 0 0))
+;;;;;;  "evil-numbers" "evil-numbers.el" (20964 44620))
 ;;; Generated autoloads from evil-numbers.el
 
 (autoload 'evil-numbers/inc-at-pt "evil-numbers" "\
@@ -19,8 +19,7 @@ Decrement the number at point or after point before end-of-line by `amount'
 
 ;;;***
 
-;;;### (autoloads nil nil ("evil-numbers-pkg.el") (20962 43022 596312
-;;;;;;  0))
+;;;### (autoloads nil nil ("evil-numbers-pkg.el") (20964 44620 315217))
 
 ;;;***
 

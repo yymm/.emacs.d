@@ -24,6 +24,8 @@
 (menu-bar-mode 0)
 
 ;; show paren match
+(setq show-paren-delay 0)
+(setq show-paren-style 'single)
 (show-paren-mode t)
 
 ;; linum
@@ -44,15 +46,22 @@
 (setq frame-background-mode 'dark)
 
 ;; use clipboard on Mac
-(defun copy-from-osx ()
- (shell-command-to-string "pbpaste"))
-(defun paste-to-osx (text &optional push)
- (let ((process-connection-type nil))
-     (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
-       (process-send-string proc text)
-       (process-send-eof proc))))
-(setq interprogram-cut-function 'paste-to-osx)
-(setq interprogram-paste-function 'copy-from-osx)
+;;(defun copy-from-osx ()
+;; (shell-command-to-string "pbpaste"))
+;;(defun paste-to-osx (text &optional push)
+;; (let ((process-connection-type nil))
+;;     (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
+;;       (process-send-string proc text)
+;;       (process-send-eof proc))))
+;;(setq interprogram-cut-function 'paste-to-osx)
+;;(setq interprogram-paste-function 'copy-from-osx)
+
+;; use clipboard on Unix
+(cond (window-system
+(setq x-select-enable-clipboard t)
+))
+
+(global-set-key "\C-m" 'newline-and-indent)
 
 ;;
 ;; Package Manegement
@@ -99,8 +108,13 @@
     evil
     evil-leader
     evil-numbers
-    evil-nerd-commenter
-    powerline
+    helm
+    helm-migemo
+    helm-ls-git
+    helm-c-moccur
+    helm-flymake
+    helm-git
+    color-moccur
     ))
 (let ((not-installed (loop for x in installing-package-list
                             when (not (package-installed-p x))
@@ -118,6 +132,10 @@
     end-mark
     evil-elscreen
     evil-surround
+    auto-complete
+    quickrun
+    elscreen
+    moccur-edit
     )
   "A list of packages to install from el-get at launch.")
 
@@ -141,3 +159,17 @@
 (add-to-list 'load-path user-emacs-directory)
 (require 'end-mark)
 (global-end-mark-mode)
+
+;; helm
+(require 'helm-config)
+(require 'helm-gtags)
+
+;; auto-complete
+(require 'auto-complete)
+(require 'auto-complete-config)
+(global-auto-complete-mode t)
+(setq ac-auto-start t)
+
+;; color-moccur
+
+;; moccur-edit

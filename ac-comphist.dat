@@ -1,0 +1,20 @@
+((("when" .
+   [1 0 1 0])
+  ("auto-complete" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Setting" .
+   [0 0 0 0 0 0 1])
+  ("set-keyboard-coding-system" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [0 0 0 1 0 0 0])
+  ("set-language-environment" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("user-emacs-directory" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("evil-mode" .
+   [0 0 0 0 0 0 0 0 1])
+  ("helm" .
+   [0 0 0 1])
+  ("helm-git" .
+   [0 0 0 0 0 0 0 1])))
